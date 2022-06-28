@@ -1,10 +1,13 @@
 import React from "react"
+import { PageContainer, PageContentContainer } from "./PageContainer"
 
 const Resources = () => {
     return (
-        <div>
-            Resources
-        </div>
+        <PageContainer>
+            <PageContentContainer>
+                Resources
+            </PageContentContainer>
+        </PageContainer>
     )
 }
 

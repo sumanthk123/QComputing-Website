@@ -1,10 +1,13 @@
 import React from "react"
+import { PageContainer, PageContentContainer } from "./PageContainer"
 
 const About = () => {
     return (
-        <div>
-            About
-        </div>
+        <PageContainer>
+            <PageContentContainer>
+                About
+            </PageContentContainer>
+        </PageContainer>
     )
 }
 
