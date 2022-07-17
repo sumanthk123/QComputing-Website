@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styled from "styled-components";
-import { Row } from "./components/containers"
 
 import { ReactComponent as RawX } from "./x.svg"
 import { ReactComponent as RawHamburger } from "./hamburger.svg"
@@ -25,18 +24,13 @@ const Link = ({ to, ...props }) => {
 const Header = () => {
     return (
         <StyledHeader>
-            <StyledTitle>
+            <StyledTitle href="/">
                 TJ QC Club
             </StyledTitle>
             {window.innerHeight < 500 || window.innerWidth < 500 ?
                 <Dropdown />
             :
-                <Row>
-                    <Link to="/">Home</Link>
-                    <Link to="/about">About</Link>
-                    <Link to="/officers">Officers</Link>
-                    <Link to="/resources">Resources</Link>
-                </Row>
+                <Link to="/resources" styles={{ "margin-right": "3em" }}>Resources</Link>
             }
         </StyledHeader>
     )
@@ -58,8 +52,6 @@ const Dropdown = () => {
             )}
             <StyledDropdownContent open={open}>
                 <Link styles={{ display: "flex", "justify-content": "right" }} to="/">Home</Link>
-                <Link styles={{ display: "flex", "justify-content": "right" }} to="/about">About</Link>
-                <Link styles={{ display: "flex", "justify-content": "right" }} to="/officers">Officers</Link>
                 <Link styles={{ display: "flex", "justify-content": "right" }} to="/resources">Resources</Link>
             </StyledDropdownContent>
         </StyledDropdownContainer>
@@ -97,18 +89,21 @@ const StyledHamburger = styled(RawHamburger)`
     height: 2em;
 `
 
-const StyledTitle = styled.div`
+const StyledTitle = styled.a`
+    margin-left: 1em;
+    margin-right: 1em;
+    text-decoration: none !important;
     color: white;
     white-space: nowrap;
     font-size: 2em;
-    margin-left: 1em;
-    margin-right: 1em;
     text-shadow: 0 0 2px #ffffff;
 `
 
 const StyledHeader = styled.div`
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    height: 2.25em;
 
     text-decoration: none !important;
 
