@@ -30,7 +30,7 @@ const Header = () => {
             {window.innerHeight < 500 || window.innerWidth < 500 ?
                 <Dropdown />
             :
-                <Link to="/resources" styles={{ "margin-right": "3em" }}>Resources</Link>
+                <Link to="/resources" styles={{ marginRight: "3em" }}>Resources</Link>
             }
         </StyledHeader>
     )

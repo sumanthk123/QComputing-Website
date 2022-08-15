@@ -1,0 +1,22 @@
+{
+    "beginner": [
+        {
+            "name": "Introduction to Qubits",
+            "file": "qubits_intro.pdf"
+        },
+        {
+            "name": "Multi-Qubit Systems",
+            "file": "multi_qubit_systems.pdf"
+        }
+    ],
+    "advanced": [
+        {
+            "name": "Density Matrices",
+            "file": "density_matrices.pdf"
+        },
+        {
+            "name": "Hidden Subgroup Problem",
+            "file": "hidden_subgroup_problem.pdf"
+        }
+    ]
+}
