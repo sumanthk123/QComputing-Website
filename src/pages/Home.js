@@ -75,11 +75,11 @@ const Home = () => {
 
                 <Quote attribution="Richard Feynman">Nature isn't classical, dammit, and if you want to make a simulation of nature, you'd better make it quantum mechanical, and by golly it's a wonderful problem, because it doesn't look so easy.</Quote>
 
-                TJ Quantum Computing Club was made In light of the exponential growth around quantum computing in the past 30 years, initiated 40 years ago by Richard Feynman’s landmark paper, suggesting that there were difficulties with simulating quantum systems on classical computers.
+                TJ Quantum Computing Club was made In light of the exponential growth around quantum computing in the past 30 years, initiated 40 years ago by Richard Feynman’s landmark paper, which explored the difficulties of simulating quantum systems on classical computers.
                 <ClubImage src={ClubPhoto} />
-                Throughout the year, we start out with the basics of quantum computing: linear algebra (vectors, matrices, complex linear algebra) used for quantum computing, then basic quantum information, including multi-qubit systems and gates, before diving into quantum algorithms, such as the Deutsch-Jozsa problem, and Grover’s and Shor’s algorithms which took the world by storm in the 1990s, and QAOA and its relation to hamiltonians.
+                Throughout the year, we start out with the basics of quantum computing: linear algebra (vectors, matrices, complex linear algebra) used for quantum computing, then basic quantum information, including multi-qubit systems and gates, before diving into quantum algorithms, such as the Deutsch-Jozsa problem, and Grover’s and Shor’s algorithms which took the world by storm in the 1990s, and QAOA alongside with hamiltonian time evolution in quantum simulation.
                 <br /><br />
-                Furthermore, we explore some protocols, such as superdense coding and quantum teleportation, as well as other communication related procedures such as quantum error correction. Finally, we open up the floor to guest lectures near the end of the year. 
+                Furthermore, we explore some protocols, such as superdense coding and quantum teleportation, as well as other communication related procedures such as quantum error correction. Finally, we open up the floor to guest lectures near the end of the year.
                 <Officers />
             </PageContentContainer>
         </PageContainer>
